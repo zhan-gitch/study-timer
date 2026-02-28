@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>学习计时器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <h1 id="time">00:00:00</h1>
+    <!-- 新增科目选择-->
+  <div class="subject">
+     <label for="subject">选择科目：</label>
+    <select id="subjectSelect">
+      <option value="Java">Java</option>
+      <option value="C语言">C语言</option>
+      <option value="其他">其他</option>
+    </select>
+  </div>
+    <button id="start">开始</button>
+    <button id="pause">暂停</button>
+    <button id="save">保存</button> <!-- 新增保存按钮 -->
+    <button id="reset">重置</button>
+    <!-- 新增记录展示区 -->
+    <div class="records">
+      <h2>学习记录</h2>
+      <ul id="recordList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
